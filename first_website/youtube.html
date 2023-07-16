@@ -7,7 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body style="height: 4000px;
+    padding: 25px;
+    padding-top: 80px;
+    margin: 0px;
+    padding-left: 95px;">
     <div class="header">
       <div class="leftSec">
         <img class="ham" src="./thumbnails/hamburger-menu.svg">
@@ -15,20 +19,44 @@
       </div>
       <div class="centerSec">
         <input class="searchBar" type="text" placeholder="Search">
-        <button class="sb"><img class="pic3" src="./thumbnails/search.svg"></button>
-        <button class="vb"><img class="pic3" src="./thumbnails/voice-search-icon.svg"></button>
+        <button class="sb">
+          <img class="pic3" src="./thumbnails/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="vb">
+          <img class="pic3" src="./thumbnails/voice-search-icon.svg">
+          <div class="tooltip">Voice Search</div>
+        </button>
       </div>
       <div class="rightSec">
         <img class="pic" src="./thumbnails/youtube-apps.svg">
         <img class="pic" src="./thumbnails/upload.svg">
-        <img class="pic" src="./thumbnails/notifications.svg">
+        <div class="notifs">
+          <img class="pic" src="./thumbnails/notifications.svg">
+          <p class="notifsCount">8</p>
+        </div>
         <img class="pic2" src="./thumbnails/pakontan.jpg">
+      </div>
+    </div>
+    <div class="sideBar">
+      <div class="sideIcon">
+        <img class="pic" src="./thumbnails/home.svg">
+        <p class="sideText">home</p>
+      </div>
+      <div class="sideIcon">
+        <img class="pic" src="./thumbnails/subscriptions.svg">
+        <p class="sideText">subscriptions</p>
+      </div>
+      <div class="sideIcon">
+        <img class="pic" src="./thumbnails/library.svg">
+        <p class="sideText">library</p>
       </div>
     </div>
     <div class="video-grid">
       <div class="videoblock">
-        <div>
+        <div class="image">
           <img class="thumbnail0" src="./thumbnails/randomImage0.jpg">
+          <p class="time">12:43</p>
         </div>
         <div class="descgrid">
           <div class="ppbox">
@@ -45,8 +73,9 @@
         </div>
       </div>
       <div class="videoblock">
-        <div>
+        <div class="image">
           <img class="thumbnail0" src="./thumbnails/far.jpg">
+          <p class="time">12:43</p>
         </div>
         <div class="descgrid">
           <div class="ppbox">
@@ -63,8 +92,9 @@
         </div>
       </div>
       <div class="videoblock">
-        <div>
-          <img class="thumbnail0" src="./thumbnails/randomImage0.jpg">
+        <div class="image">
+          <img class="thumbnail0" src="./thumbnails/far.jpg">
+          <p class="time">12:43</p>
         </div>
         <div class="descgrid">
           <div class="ppbox">
@@ -81,8 +111,9 @@
         </div>
       </div>
       <div class="videoblock">
-        <div>
+        <div class="image">
           <img class="thumbnail0" src="./thumbnails/randomImage0.jpg">
+          <p class="time">12:43</p>
         </div>
         <div class="descgrid">
           <div class="ppbox">
@@ -99,8 +130,9 @@
         </div>
       </div>
       <div class="videoblock">
-        <div>
+        <div class="image">
           <img class="thumbnail0" src="./thumbnails/randomImage0.jpg">
+          <p class="time">12:43</p>
         </div>
         <div class="descgrid">
           <div class="ppbox">
@@ -117,8 +149,28 @@
         </div>
       </div>
       <div class="videoblock">
-        <div>
+        <div class="image">
           <img class="thumbnail0" src="./thumbnails/randomImage0.jpg">
+          <p class="time">12:43</p>
+        </div>
+        <div class="descgrid">
+          <div class="ppbox">
+            <img class="thumbnail1" src="./thumbnails/pakontan.jpg">
+          </div>
+          <div class="txtbox">
+            <p class="videoName">
+              <strong>GREEN JUMPING</strong> is so fun
+            </p>
+            <p class="videoDesc">
+              2.7k views &#183; 2 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="videoblock">
+        <div class="image">
+          <img class="thumbnail0" src="./thumbnails/randomImage0.jpg">
+          <p class="time">12:43</p>
         </div>
         <div class="descgrid">
           <div class="ppbox">

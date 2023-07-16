@@ -66,6 +66,18 @@ p {
   row-gap: 40px;
 }
 
+
+@media (max-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 666px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
 .descgrid {
   display: grid;
   grid-template-columns: 60px 1fr;
@@ -76,6 +88,18 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: lightgrey;
+  box-shadow: 10px 0px 7px rgb(224, 224, 224);
+  z-index: 100;
 }
 
 .leftSec {
@@ -128,7 +152,9 @@ p {
 
 .pic {
   height: 20px;
-  margin: 10px;
+  margin: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
   transition: 0.05s;
   cursor: pointer;
 }
@@ -163,21 +189,136 @@ p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
+}
+
+.sb .tooltip {
+  position: absolute;
+  bottom: -30px;
+  background-color: rgb(70, 70, 70);
+  border-radius: 3px;
+  padding: 4px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
 }
 
 .vb {
   height: 27px;
   width: 27px;
   margin-left: 10px;
+  margin-right: 10px;
   border-radius: 15px;
   border: 1px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vb .tooltip {
+  position: absolute;
+  bottom: -30px;
+  background-color: rgb(70, 70, 70);
+  border-radius: 3px;
+  padding: 4px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.vb:hover .tooltip,
+.sb:hover .tooltip {
+  opacity: 1;
+  transition-delay: 0.5s;
 }
 
 .pic3 {
   height: 16px;
   margin: 0px;
   transition: 0.05s;
+}
+
+.sideBar {
+  position: fixed;
+  top: 55px;
+  left: 0px;
+  bottom: 0px;
+  width: 70px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 300px;
+  justify-content: end;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: lightgrey;
+  box-shadow: 0px 10px 7px rgb(224, 224, 224);
+  z-index: 200;
+}
+
+.sideIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding-top: 0px;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.sideIcon:active {
+  background-color: lightgrey;
+}
+
+.sideText {
+  margin: 0px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.image {
+  position: relative;
+}
+
+.time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 0px;
+  opacity: 0.8;
+  padding-left: 3px;
+  padding-right: 3px;
+  z-index: 1;
+}
+
+.notifs {
+  position: relative;
+}
+
+.notifsCount {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  margin: 0px;
+  background-color: red;
+  border-radius: 10px;
+  font-size: 12.5px;
+  color: white;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  z-index: 1;
 }
